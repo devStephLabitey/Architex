@@ -1,0 +1,112 @@
+:root{
+    --color1: white;
+    --color2: #fb8500;
+    --color3: #ffb703;
+    --color4: #7209b7;
+    --color5: #f3f2f2;
+    --color6: #bcbaba;
+    --imgbD:  #b8b2b249;
+}
+
+*{
+    font-family: 'Poppins';
+}
+.Formbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    background: var(--color5);
+    height: 110vh;
+}
+.Formbody .formPart{
+    display: flex;
+    flex-direction: column;
+    background: var(--color1);
+    align-items: center;
+    justify-content: space-around;
+    padding: 4vh;
+    border-radius: 1vh;
+    gap: 3vh;
+}
+.formPart img{
+    height: 25vh;
+    width: 45vh;
+}
+.imgPart{
+    position: relative;
+}
+
+form{
+    display: flex;
+    margin-top: 1vh;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+form .dataForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1vh;
+    width: 100%;
+    
+}
+.dataForm label{
+    margin-top: 2vh;
+}
+.dataForm input{
+    border:none;
+    border-bottom:  1px  var(--color6) solid ;
+    outline: none;
+}
+
+form .submitBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+form .submitBtn button{
+    color: var(--color1);
+    background: var(--color4);
+    border: none;
+    border-radius: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 4vh;
+    gap: 2vh;
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+form .submitBtn button:hover{
+    gap: 7vh;
+    padding: 2vh 3vh;
+}
+form .submitBtn button span{
+    display: none;
+}
+form .submitBtn button:hover span{
+    display: block;
+    height: 5vh;
+    width: 5vh;
+    border: solid 1px;
+    border-radius: 100%;
+    background: white;
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-out .2s;
+}
+.formPart{
+    position: relative;
+}
+.back{
+    position: relative;
+}
+.text{
+    font-size: 14px;
+}

@@ -1,0 +1,133 @@
+:root{
+    --color1: white;
+    --color2: #fb8500;
+    --color3: #ffb703;
+    --color4: #7209b7;
+    --color5: #f3f2f2;
+    --color6: #bcbaba;
+    --imgbD:  #b8b2b249;
+    --borbtm: rgba(176, 171, 171, 0.429);
+}
+*{
+    font-family: 'Poppins';
+}
+.Navbar{
+    display: flex;
+    position: relative;
+}
+.Navbar .navContent{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    border-bottom: solid var(--borbtm) 1px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color1);
+    
+}
+.navContent .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navContent .logo img{
+    height: 5vh;
+}
+.navContent .logo p{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--color1);
+    padding-top: 1.5vh;
+}
+.Navlinks{
+    display: flex;
+    align-items: center;
+    gap: 8vh;
+    
+}
+.NavDev,.NavPlans{
+    color: var(--color1);
+    cursor: pointer;
+    position: relative;
+}
+.explore:hover .NavDev{
+    background: var(--color1);
+    color: var(--color2);
+}
+.explore:hover .hoverD{
+    display: block;
+}
+.Plans:hover .NavPlans{
+    background: var(--color1);
+    color: var(--color2);
+}
+.Plans:hover .hoverP{
+    display: block;
+}
+
+.hoverD, .hoverP{
+    display: none;
+    flex-direction: column;
+    color: var(--color1);
+    position: absolute;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    border: solid;
+    width: 40vh;
+    border-radius: 4px;
+    height: 6vh;
+    
+}
+.search i{
+    border: solid 1px;
+    padding: 0.5vh 1vh;
+    font-size: 10px;
+    margin-left: 1vh;
+}
+.search p{
+    border: solid 1px;
+    padding-left: 1vh;
+    width: 78%;
+}
+.NavLink{
+    cursor: text;
+    text-decoration: none;
+    color: white;
+}
+.Panier{
+    position: relative;
+    cursor: pointer;
+}
+.Panier .cartCount{
+    position: absolute;
+    top: -1.5vh;
+    font-size: 10px;
+    right: -1.5vh;
+    color: var(--color2);
+    background: var(--color1);
+    border-radius: 5px;
+    width: 2.5vh; 
+    text-align: center;
+}
+.In{
+    background: transparent;
+    border: none;
+    margin-right: 1vh;
+    cursor: pointer;
+}
+.Up{
+    background: var(--color4);
+    color: var(--color1);
+    border: none;
+    padding: 1vh 2vh;
+    cursor: pointer;
+    border-radius: 1vh;
+}
+.Up:hover{
+    background: #63099f;
+}
